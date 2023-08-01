@@ -1,0 +1,49 @@
+﻿/* Estilos para todas las etiquetas <span> */
+span {
+    background-color: #0000FF;
+    color: #00FF00;
+    font-size: 12px;
+    font-family: Helvetica, Arial, sans-serif; 
+}
+span.titulo{
+    text-align:center
+}
+
+span.personal {
+    background-color: #FF0000; 
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+span.empresariales {
+    background-color: #00FF00;
+    color: #000000;
+    font-size: 8px;
+}
+
+
+span.enfocada {
+    background-color: #66CCFF;
+    color: #3333CC;
+    font-family: 'Papyrus', Calibri, sans-serif;
+}
+
+
+span.desenfocada {
+    background-color: #C0C0C0;
+    color: #6600CC;
+    font-family: Arial, sans-serif;
+}
+.boton_aceptar{
+    margin-right:auto
+}
+
+
+.recuadro-externo {
+    border: 2px solid #333;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: #F0F0F0;
+}

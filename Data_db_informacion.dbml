@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LINQ" Class="Data_db_informacionDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.categoria" Member="categoria">
+    <Type Name="categoria">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Cat_Nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="categoria_informacion" Member="informacion" ThisKey="ID" OtherKey="categoriaID" Type="informacion" />
+    </Type>
+  </Table>
+  <Table Name="dbo.informacion" Member="informacion">
+    <Type Name="informacion">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellido" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="legajo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="categoriaID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="categoria_informacion" Member="categoria" ThisKey="categoriaID" OtherKey="ID" Type="categoria" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
